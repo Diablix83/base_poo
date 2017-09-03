@@ -1,0 +1,12 @@
+<article class="detail">
+	<h1>Détails de l'utilisateur : <?= $user['firstName'] ?> <?= $user['lastName'] ?></h1>
+
+	<img src="<?= $user['avatar_url'] ?>" alt="">
+	<p>Email : <?= $user['email'] ?></p>
+	<p>Sexe : <?= $user['gender'] ?></p>
+	<p>Description : <?= $user['description'] ?></p>
+</article>
+<section class="status">
+	<?php $statusCtrl = new StatusController(); ?>
+	<?php $statusCtrl->index(); ?>
+</section>

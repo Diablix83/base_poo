@@ -1,0 +1,9 @@
+<?php foreach ($statusAll as $status): ?>
+	<article>
+		<?php if(!empty($status['image_url'])): ?>
+			<img src="<?= $status['image_url'] ?>">
+		<?php endif; ?>
+		<p><?= $status['date_creation'] ?></p>
+		<p><?= $status['content'] ?></p>
+	</article>
+<?php endforeach; ?>

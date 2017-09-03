@@ -1,0 +1,12 @@
+<h1>Liste des utilisateurs</h1>
+
+<section class="users">
+	<?php foreach ($users as $user): ?>
+		<article>
+			<a href="?task=show&id=<?= $user['id'] ?>">
+				<img src="<?= $user['avatar_url'] ?>">
+				<p><?= $user['firstName'] ?> <?= $user['lastName'] ?></p>
+				</a>
+		</article>
+	<?php endforeach; ?>
+</section>
